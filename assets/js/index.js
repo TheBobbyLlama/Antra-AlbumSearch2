@@ -146,6 +146,8 @@ function bindDomEvents() {
 
 bindDomEvents();
 
+domLookup.elementSearchWarnings.hide();
+
 domLookup.elementSearchText.val(localStorage.getItem("lastSearch"));
 
 if (domLookup.elementSearchText.val()) {
