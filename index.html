@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Album Search</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js"></script>
+	<script defer src="./assets/js/bQuery.js"></script>
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+	<main class="search-container">
+		<header class="search-container__header">
+			<form id="artist-search-form" class="search-form">
+				<input class="search-form__text" type="text" placeholder="Search Artist..." />
+				<button class="search-form__button" type="submit"></button>
+				<div class="search-form__warning" data-key="empty">Please enter an artist name.</div>
+			</form>
+		</header>
+		<section id="artist-search-results" class="search-container__results"></section>
+	</main>
+	<script defer src="./assets/js/iTunesAPI.js"></script>
+	<script defer src="./assets/js/index.js"></script>
+</body>
+</html>
